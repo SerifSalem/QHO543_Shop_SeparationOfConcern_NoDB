@@ -25,7 +25,7 @@ fun consoleMain(shop: Shop) {
             "3" -> listProductsScreen(shop)
             "4" -> sellScreen(shop)
             "0" -> running = false
-            else -> println("Invalid option. Please choose 1-5.")
+            else -> println("Invalid option. Please choose 0-4.")
         }
     }
 
