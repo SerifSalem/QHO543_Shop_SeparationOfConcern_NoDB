@@ -13,6 +13,14 @@ repositories {
 dependencies {
     // Fallback dependency (avoids relying on the compose accessor)
     implementation(compose.desktop.currentOs)
+
+    implementation(kotlin("stdlib"))
+    testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter:5.14.0")
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 kotlin {
